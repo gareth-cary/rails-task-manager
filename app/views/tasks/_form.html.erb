@@ -1,0 +1,20 @@
+<h2>New Page</h2>
+
+<%= form_for(@task) do |f| %>
+    <%= f.label :title %>
+    <p><%= f.text_field :title %></p>
+    <%= f.label :details %>
+   <p><%= f.text_area :details %></p>
+
+    <div class="checkbox">
+      <label>
+        <%= f.check_box :completed %> Completed
+      </label>
+    </div>
+
+
+
+
+
+    <%= f.submit %>
+<% end %>
